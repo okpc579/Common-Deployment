@@ -1,5 +1,5 @@
 # BOSH INFO
-bosh_url: "10.0.1.6"				# BOSH URL ('bosh env' 명령어를 통해 확인 가능)
+bosh_url: "https://10.0.1.6"				# BOSH URL (e.g. "https://00.000.0.0")
 bosh_client_admin_id: "admin"			# BOSH Client Admin ID
 bosh_client_admin_secret: "ert7na4jpewscztsxz48"	# BOSH Client Admin Secret('echo $(bosh int ~/workspace/paasta-5.0/deployment/paasta-deployment/bosh/{iaas}/creds.yml --path /admin_password)' 명령어를 통해 확인 가능)
 bosh_director_port: 25555			# bosh director port
@@ -15,13 +15,13 @@ paasta_nats_port: 4222
 paasta_nats_user: "nats"
 paasta_nats_password: "7EZB5ZkMLMqT73h2JtxPv1fvh3UsqO"	# PaaS-TA Nats Password (CredHub 로그인후 'credhub get -n /micro-bosh/paasta/nats_password' 명령어를 통해 확인 가능)
 paasta_nats_private_networks_name: "default"	# PaaS-TA Nats 의 Network 이름
-paasta_database_ips: "10.0.1.123"		# PaaS-TA Database IP
-paasta_database_port: 5524			# PaaS-TA Database Port
-paasta_cc_db_id: "cloud_controller"		# CCDB ID
-paasta_cc_db_password: "cc_admin"		# CCDB Password
-paasta_uaa_db_id: "uaa"				# UAADB ID
-paasta_uaa_db_password: "uaa_admin"		# UAADB Password
-
+paasta_database_ips: "10.0.1.123"		# PaaS-TA Database IP (e.g. "10.0.1.123")
+paasta_database_port: 5524			# PaaS-TA Database Port (e.g. 5524)
+paasta_cc_db_id: "cloud_controller"		# CCDB ID (e.g. "cloud_controller")
+paasta_cc_db_password: "cc_admin"		# CCDB Password (e.g. "cc_admin")
+paasta_uaa_db_id: "uaa"				# UAADB ID (e.g. "uaa")
+paasta_uaa_db_password: "uaa_admin"		# UAADB Password (e.g. "uaa_admin")
+paasta_api_version: "v3"
 
 # UAAC INFO
 uaa_client_admin_id: "admin"			# UAAC Admin Client Admin ID
